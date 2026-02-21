@@ -298,42 +298,9 @@ haplink.disconnect()
 - [Python Troubleshooting](python/README.md#troubleshooting) 
 - [Firmware Troubleshooting](firmware/README.md#-troubleshooting)
 
----
-
-## Development
-
-### Building from Source
-
-```bash
-git clone https://github.com/connormmckelvey/Haplink.git
-cd Haplink
-
-# Python development
-cd python
-pip install -e .[dev]  # Installs with pytest, black, ruff, mypy
-```
-
-### Testing
-
-```bash
-cd python
-pytest                    # Run tests
-pytest --cov=haplink     # With coverage
-```
 
 ---
 
-## Project Roadmap
-
-- [ ] Automatic telemetry streaming (push from firmware)
-- [ ] Parameter read requests (query device state)
-- [ ] Heartbeat/keepalive mechanism
-- [ ] CRC-16 checksum option
-- [ ] PlatformIO library support
-- [ ] PyPI package publication
-- [ ] More examples and tutorials
-
----
 
 ## Contributing
 
