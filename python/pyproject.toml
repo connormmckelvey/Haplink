@@ -55,10 +55,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ConnorMcKelvey/Haplink"
-Repository = "https://github.com/ConnorMcKelvey/Haplink"
-Issues = "https://github.com/ConnorMcKelvey/Haplink/issues"
-Documentation = "https://github.com/ConnorMcKelvey/Haplink/blob/main/README.md"
+Homepage = "https://github.com/connormmckelvey/Haplink"
+Repository = "https://github.com/connormmckelvey/Haplink"
+Issues = "https://github.com/connormmckelvey/Haplink/issues"
+Documentation = "https://github.com/connormmckelvey/Haplink/blob/main/README.md"
 
 [tool.setuptools]
 package-dir = {"" = "."}

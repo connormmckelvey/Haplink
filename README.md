@@ -39,12 +39,7 @@
 **Install directly from GitHub**:
 ```bash
 # Latest version
-pip install git+https://github.com/ConnorMcKelvey/Haplink.git#subdirectory=python
-
-# Or clone and install
-git clone https://github.com/ConnorMcKelvey/Haplink.git
-cd Haplink/python
-pip install .
+pip install git+https://github.com/connormmckelvey/Haplink.git#subdirectory=python
 ```
 
 **Requirements**: Python 3.8+ and `pyserial>=3.5`
@@ -61,7 +56,7 @@ lib_deps =
 **Install from GitHub**:
 ```bash
 # Clone the repository
-git clone https://github.com/ConnorMcKelvey/Haplink.git
+git clone https://github.com/connormmckelvey/Haplink.git
 
 # Copy to Arduino libraries
 # Windows:
@@ -310,7 +305,7 @@ haplink.disconnect()
 ### Building from Source
 
 ```bash
-git clone https://github.com/ConnorMcKelvey/Haplink.git
+git clone https://github.com/connormmckelvey/Haplink.git
 cd Haplink
 
 # Python development
@@ -362,7 +357,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 **Connor McKelvey**
 - Email: ConnorMcKelvey@utexas.edu
-- GitHub: [@ConnorMcKelvey](https://github.com/ConnormMcKelvey)
+- GitHub: [@connormmckelvey](https://github.com/connormmckelvey)
 
 ---
 
@@ -374,7 +369,7 @@ Built for the haptic robotics research community. Special thanks to all contribu
 
 ## Support & Resources
 
-- **[Issues](https://github.com/ConnorMcKelvey/Haplink/issues)** - Bug reports and feature requests
+- **[Issues](https://github.com/connormmckelvey/Haplink/issues)** - Bug reports and feature requests
 - **[Firmware Documentation](firmware/README.md)** - Complete Arduino/C++ guide
 - **[Python Documentation](python/README.md)** - Complete Python client guide
 - **[Examples](python/examples/)** - Working code examples

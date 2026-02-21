@@ -10,7 +10,7 @@ C++ library for Arduino and embedded systems to enable serial communication with
 
 **Step 1: Clone the repository**
 ```bash
-git clone https://github.com/ConnorMcKelvey/Haplink.git
+git clone https://github.com/connormmckelvey/Haplink.git
 ```
 
 **Step 2: Copy to Arduino libraries folder**
@@ -51,12 +51,12 @@ Arduino/libraries/Haplink/
 Add to your `platformio.ini`:
 ```ini
 lib_deps =
-    https://github.com/ConnorMcKelvey/Haplink.git
+    https://github.com/connormmckelvey/Haplink.git
 ```
 
 ### Method 3: Download ZIP
 
-1. Download from [GitHub releases](https://github.com/ConnorMcKelvey/Haplink/releases) or click "Code" → "Download ZIP"
+1. Download from [GitHub releases](https://github.com/connormmckelvey/Haplink/releases) or click "Code" → "Download ZIP"
 2. Extract the ZIP file
 3. Copy `Haplink-main/firmware/src/` to your Arduino libraries folder as shown above
 4. Restart Arduino IDE
@@ -621,5 +621,5 @@ MIT License - see [LICENSE](../LICENSE) for details.
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/ConnorMcKelvey/Haplink/issues)
+- **Issues**: [GitHub Issues](https://github.com/connormmckelvey/Haplink/issues)
 - **Email**: ConnorMcKelvey@utexas.edu

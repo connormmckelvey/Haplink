@@ -16,7 +16,7 @@ pip install -e .
 
 **Option 3: Editable/development install**
 ```bash
-git clone https://github.com/ConnorMcKelvey/Haplink.git
+git clone https://github.com/connormmckelvey/Haplink.git
 cd Haplink/python
 pip install -e .              # Basic install
 pip install -e .[dev]         # With dev tools (pytest, black, ruff, mypy)
@@ -426,11 +426,11 @@ sudo chmod 666 /dev/ttyUSB0
 
 ## License
 
-MIT License - see [LICENSE](https://github.com/ConnorMcKelvey/Haplink/blob/main/LICENSE) for details.
+MIT License - see [LICENSE](https://github.com/connormmckelvey/Haplink/blob/main/LICENSE) for details.
 
 ---
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/ConnorMcKelvey/Haplink/issues)
+- **Issues**: [GitHub Issues](https://github.com/connormmckelvey/Haplink/issues)
 - **Email**: ConnorMcKelvey@utexas.edu
