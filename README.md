@@ -51,7 +51,7 @@ pip install git+https://github.com/connormmckelvey/Haplink.git#subdirectory=pyth
 ```ini
 #inside your platformio.ini
 lib_deps =
-    https://github.com/ConnorMcKelvey/Haplink.git
+    https://github.com/Connormmckelvey/Haplink.git
 ```
 **Install from GitHub**:
 ```bash
