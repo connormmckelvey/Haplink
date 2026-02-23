@@ -330,7 +330,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
-Built for the haptic robotics research community. Special thanks to all contributors and the University of Texas Haptics research group.
+Built for the haptic robotics research community. Special thanks to the HERO research group at The University of Texas, and the members of the Freshman Research Initative.
 
 ---
 
