@@ -60,14 +60,14 @@ haplink.disconnect()
 #### Constructor
 
 ```python
-haplink = Haplink(port: str, baudrate: int = 115200, timeout: float = 0.01, 
+haplink = Haplink(port: str, baudrate: int = 115200, timeout: float = 0.001, 
                   connection_timeout: float = 2.0)
 ```
 
 **Parameters**:
 - `port`: Serial port name (e.g., `'COM5'`, `'/dev/ttyUSB0'`, `'/dev/ttyACM0'`)
 - `baudrate`: Communication speed (default: 115200)
-- `timeout`: Serial read timeout in seconds (default: 0.01 for non-blocking)
+- `timeout`: Serial read timeout in seconds (default: 0.001, idle checks are fully non-blocking)
 - `connection_timeout`: Time to wait for device response during connection (default: 2.0)
 
 #### Connection Management
@@ -411,7 +411,7 @@ sudo chmod 666 /dev/ttyUSB0
 **Solutions**:
 1. **Reduce telemetry rate** on Arduino side
 2. **Batch telemetry** using `sendAllTelemetry()` instead of individual calls
-3. **Check timeout value** - lower timeout = faster response: `Haplink(port, timeout=0.001)`
+3. **Check timeout value** - lower timeout = faster response (default is now 0.001 with non-blocking idle checks)
 4. **Increase baud rate** to 230400 or higher (must match on both sides)
 
 ---
