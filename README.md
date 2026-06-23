@@ -278,8 +278,8 @@ haplink.disconnect()
 ```
 
 **See also**:
-- [Firmware Examples](firmware/README.md#-usage-examples) - Multi-sensor streaming, safety features, multiple serial ports
-- [Python Examples](python/examples/) - Complete working examples
+- [Firmware Examples](firmware/examples/) - Complete working Arduino examples (see also [Usage Examples in Doc](firmware/README.md#-usage-examples))
+- [Python Examples](python/examples/) - Complete working Python examples
 
 ---
 
@@ -339,6 +339,7 @@ Built for the haptic robotics research community. Special thanks to the HERO res
 - **[Issues](https://github.com/connormmckelvey/Haplink/issues)** - Bug reports and feature requests
 - **[Firmware Documentation](firmware/README.md)** - Complete Arduino/C++ guide
 - **[Python Documentation](python/README.md)** - Complete Python client guide
-- **[Examples](python/examples/)** - Working code examples
+- **[Python Examples](python/examples/)** - Working code examples (Python)
+- **[Firmware Examples](firmware/examples/)** - Working code examples (Arduino)
 
 ---

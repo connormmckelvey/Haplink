@@ -420,7 +420,8 @@ sudo chmod 666 /dev/ttyUSB0
 
 - **[Main Project README](../README.md)** - Overview and protocol details
 - **[Firmware Documentation](../firmware/README.md)** - Arduino/C++ API reference
-- **[Complete Examples](examples/)** - Working code examples
+- **[Python Examples](examples/)** - Working Python client examples
+- **[Firmware Examples](../firmware/examples/)** - Working Arduino firmware examples
 
 ---
 

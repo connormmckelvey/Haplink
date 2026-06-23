@@ -313,6 +313,9 @@ Use these type constants when registering variables:
 
 ## Usage Examples
 
+A complete, working sketch matching the Python example client is available in:
+* **[basic_example.ino](examples/basic_example/basic_example.ino)**
+
 ### Example 1: Motor Position Control
 
 ```cpp
@@ -609,7 +612,8 @@ For complete protocol specification including packet structure, data encoding, a
 
 - **[Python Client Documentation](../python/README.md)** - Host-side library
 - **[Main README](../README.md)** - Project overview and examples
-- **[Examples](../python/examples/)** - Complete working examples
+- **[Firmware Examples](examples/)** - Complete working Arduino examples
+- **[Python Examples](../python/examples/)** - Complete working Python examples
 
 ---
 
