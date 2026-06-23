@@ -74,7 +74,7 @@ class Haplink:
         self,
         port: str,
         baudrate: int = 115200,
-        timeout: float = 0.01,
+        timeout: float = 0.001,
         connection_timeout: float = 2.0
     ):
         """
@@ -83,7 +83,7 @@ class Haplink:
         Args:
             port: Serial port (e.g., 'COM5', '/dev/ttyUSB0')
             baudrate: Baud rate (default 115200)
-            timeout: Serial read timeout in seconds (default 0.01 for non-blocking)
+            timeout: Serial read timeout in seconds (default 0.001 for low latency)
             connection_timeout: Max time to wait for device response
         """
         self._serial = SerialPort(port, baudrate, timeout)

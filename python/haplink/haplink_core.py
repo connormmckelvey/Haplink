@@ -179,7 +179,7 @@ class SerialPort:
     Handles reading/writing complete packets with timeout and error handling.
     """
 
-    def __init__(self, port: str, baudrate: int = 115200, timeout: float = 0.01):
+    def __init__(self, port: str, baudrate: int = 115200, timeout: float = 0.001):
         """
         Initialize serial port (does not open connection).
 
@@ -255,6 +255,10 @@ class SerialPort:
         """
         if not self.is_open():
             raise HaplinkError("Serial port not open")
+
+        # Return immediately if no data is waiting (prevents blocking)
+        if self.ser.in_waiting == 0:
+            return None
 
         # Wait for start byte
         while True:
