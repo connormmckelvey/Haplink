@@ -284,7 +284,7 @@ class Haplink:
                 packet = self._serial.read_packet()
             except ProtocolError as e:
                 errors += 1
-                if debug and errors <= 3:
+                if debug:
                     print(f"[DEBUG] ProtocolError: {e}")
                 continue  # Skip malformed packets, try next
 
