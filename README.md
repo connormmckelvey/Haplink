@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Firmware](https://img.shields.io/badge/firmware-C%2B%2B%2FArduino-blue.svg?logo=cplusplus)](https://github.com/connormmckelvey/haplink/firmware)
+[![Firmware](https://img.shields.io/badge/firmware-blue.svg?logo=cplusplus)](https://github.com/connormmckelvey/haplink/firmware)
 [![Arduino Compatible](https://img.shields.io/badge/Arduino-Compatible-teal.svg?logo=arduino)](https://www.arduino.cc/)
 
 
