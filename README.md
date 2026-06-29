@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Arduino Compatible](https://img.shields.io/badge/Arduino-Compatible-teal.svg?logo=arduino)](https://www.arduino.cc/)
 
 **Haplink** is a lightweight, high-performance communication library for haptic robotic devices. It provides a robust bidirectional serial protocol for real-time parameter control and telemetry streaming between embedded devices (Arduino/microcontrollers) and host computers (Python).
 
