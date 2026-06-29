@@ -9,7 +9,7 @@ Python client library for communicating with haptic robotic devices over serial 
 ### From Source
 
 ```bash
-git clone https://github.com/ConnorMcKelvey/Haplink.git
+git clone https://github.com/ConnormmcKelvey/Haplink.git
 cd Haplink/python
 pip install -e .
 ```

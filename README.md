@@ -1,3 +1,5 @@
+![Haplink Logo](docs/logo_with_text_dm.png)
+
 # Haplink™ Communication Protocol
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
