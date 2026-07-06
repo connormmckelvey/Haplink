@@ -6,7 +6,14 @@ C++ library for Arduino and embedded systems to enable serial communication with
 
 ## Installation
 
-### Method 1: From GitHub (Recommended)
+### Method 1: Arduino Library Manager (Recommended)
+
+1. Open the Arduino IDE.
+2. Go to **Sketch** -> **Include Library** -> **Manage Libraries...** (or press `Ctrl+Shift+I` / `Cmd+Shift+I`).
+3. Search for **Haplink**.
+4. Click **Install**.
+
+### Method 2: From Source / GitHub
 
 **Step 1: Clone the repository**
 ```bash
@@ -17,15 +24,15 @@ git clone https://github.com/connormmckelvey/Haplink.git
 
 **Windows (PowerShell)**:
 ```powershell
-cp -r Haplink/firmware/src ~/Documents/Arduino/libraries/Haplink
+cp -r Haplink ~/Documents/Arduino/libraries/
 ```
 
 **macOS/Linux**:
 ```bash
-cp -r Haplink/firmware/src ~/Arduino/libraries/Haplink
+cp -r Haplink ~/Arduino/libraries/
 ```
 
-**Manual copy**: Copy the `firmware/src/` folder to:
+**Manual copy**: Copy the entire `Haplink` repository folder to:
 - **Windows**: `Documents/Arduino/libraries/Haplink/`
 - **macOS**: `~/Documents/Arduino/libraries/Haplink/`
 - **Linux**: `~/Arduino/libraries/Haplink/`
@@ -33,10 +40,16 @@ cp -r Haplink/firmware/src ~/Arduino/libraries/Haplink
 The final structure should be:
 ```
 Arduino/libraries/Haplink/
-├── haplink.h
-├── haplink.cpp
-├── haplink_types.h
-└── library.properties
+├── src/
+│   ├── haplink.h
+│   ├── haplink.cpp
+│   └── haplink_types.h
+├── examples/
+│   └── basic_example/
+│       └── basic_example.ino
+├── library.properties
+├── LICENSE
+└── README.md
 ```
 
 **Step 3: Restart Arduino IDE**
@@ -46,7 +59,7 @@ Arduino/libraries/Haplink/
 #include <haplink.h>  // If this compiles, you're good!
 ```
 
-### Method 2: PlatformIO
+### Method 3: PlatformIO
 
 Add to your `platformio.ini`:
 ```ini
@@ -54,12 +67,13 @@ lib_deps =
     https://github.com/connormmckelvey/Haplink.git
 ```
 
-### Method 3: Download ZIP
+### Method 4: Download ZIP
 
 1. Download from [GitHub releases](https://github.com/connormmckelvey/Haplink/releases) or click "Code" → "Download ZIP"
-2. Extract the ZIP file
-3. Copy `Haplink-main/firmware/src/` to your Arduino libraries folder as shown above
-4. Restart Arduino IDE
+2. Extract the ZIP file.
+3. Rename the extracted folder from `Haplink-main` (or `Haplink-version`) to `Haplink`.
+4. Copy the `Haplink` folder to your Arduino libraries folder.
+5. Restart Arduino IDE.
 
 ---
 

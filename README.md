@@ -23,7 +23,7 @@
 - Interrupt-safe design
 - Registry-based variable binding (up to 32 parameters + 32 telemetry variables)
 - Minimal memory footprint
-- **[Full Firmware Documentation](firmware/README.md)**
+- **[Full Firmware Documentation](docs/firmware_readme.md)**
 
 ### Python Client
 - Object-oriented API with type hints
@@ -49,27 +49,32 @@ pip install git+https://github.com/connormmckelvey/Haplink.git#subdirectory=pyth
 **[→ Detailed Python installation guide](python/README.md)**
 
 ### Firmware Library (Arduino)
+
+**Install via Arduino Library Manager (Recommended)**:
+Search for **Haplink** in the Library Manager and install it with one click.
+
 **Install if using Platform.io**:
 ```ini
 #inside your platformio.ini
 lib_deps =
     https://github.com/Connormmckelvey/Haplink.git
 ```
-**Install from GitHub**:
+
+**Install from GitHub (Manual)**:
 ```bash
 # Clone the repository
 git clone https://github.com/connormmckelvey/Haplink.git
 
-# Copy to Arduino libraries
+# Copy the entire Haplink folder to Arduino libraries
 # Windows:
-cp -r Haplink/firmware/src ~/Documents/Arduino/libraries/Haplink
+cp -r Haplink ~/Documents/Arduino/libraries/
 # macOS/Linux:
-cp -r Haplink/firmware/src ~/Arduino/libraries/Haplink
+cp -r Haplink ~/Arduino/libraries/
 ```
 
 Then restart Arduino IDE and use: `#include <haplink.h>`
 
-**[→ Detailed firmware installation guide](firmware/README.md)**
+**[→ Detailed firmware installation guide](docs/firmware_readme.md)**
 
 ---
 
@@ -158,7 +163,7 @@ haplink.disconnect()
 
 ### Complete API References
 
-- **[Firmware API Documentation](firmware/README.md)** - Complete C++/Arduino API reference with examples
+- **[Firmware API Documentation](docs/firmware_readme.md)** - Complete C++/Arduino API reference with examples
 - **[Python API Documentation](python/README.md)** - Complete Python client API reference
 
 ### Quick API Overview
@@ -236,7 +241,7 @@ All data is little-endian and padded to 8 bytes. Packets use XOR checksum for er
 
 ### Complete Position Control System
 
-**Arduino** ([more examples →](firmware/README.md#-usage-examples)):
+**Arduino** ([more examples →](docs/firmware_readme.md#-usage-examples)):
 ```cpp
 #include <haplink.h>
 
@@ -280,7 +285,7 @@ haplink.disconnect()
 ```
 
 **See also**:
-- [Firmware Examples](firmware/examples/) - Complete working Arduino examples (see also [Usage Examples in Doc](firmware/README.md#-usage-examples))
+- [Firmware Examples](examples/) - Complete working Arduino examples (see also [Usage Examples in Doc](docs/firmware_readme.md#-usage-examples))
 - [Python Examples](python/examples/) - Complete working Python examples
 
 ---
@@ -298,7 +303,7 @@ haplink.disconnect()
 
 **For detailed troubleshooting guides**:
 - [Python Troubleshooting](python/README.md#troubleshooting) 
-- [Firmware Troubleshooting](firmware/README.md#-troubleshooting)
+- [Firmware Troubleshooting](docs/firmware_readme.md#-troubleshooting)
 
 
 ---
@@ -339,9 +344,9 @@ Built for the haptic robotics research community. Special thanks to the HERO res
 ## Support & Resources
 
 - **[Issues](https://github.com/connormmckelvey/Haplink/issues)** - Bug reports and feature requests
-- **[Firmware Documentation](firmware/README.md)** - Complete Arduino/C++ guide
+- **[Firmware Documentation](docs/firmware_readme.md)** - Complete Arduino/C++ guide
 - **[Python Documentation](python/README.md)** - Complete Python client guide
 - **[Python Examples](python/examples/)** - Working code examples (Python)
-- **[Firmware Examples](firmware/examples/)** - Working code examples (Arduino)
+- **[Firmware Examples](examples/)** - Working code examples (Arduino)
 
 ---
