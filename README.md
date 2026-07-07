@@ -31,7 +31,7 @@
 ### Python Client
 - Object-oriented API with type hints
 - Automatic packet synchronization
-- Connection management with timeout detection
+- Connection management
 - Human-readable variable naming
 - **[Full Python Documentation](python/README.md)**
 

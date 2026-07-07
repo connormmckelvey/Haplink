@@ -60,15 +60,14 @@ haplink.disconnect()
 #### Constructor
 
 ```python
-haplink = Haplink(port: str, baudrate: int = 115200, timeout: float = 0.001, 
-                  connection_timeout: float = 2.0)
+haplink = Haplink(port: str, baudrate: int = 115200, timeout: float = 0.001 
+                  )
 ```
 
 **Parameters**:
 - `port`: Serial port name (e.g., `'COM5'`, `'/dev/ttyUSB0'`, `'/dev/ttyACM0'`)
 - `baudrate`: Communication speed (default: 115200)
 - `timeout`: Serial read timeout in seconds (default: 0.001, idle checks are fully non-blocking)
-- `connection_timeout`: Time to wait for device response during connection (default: 2.0)
 
 #### Connection Management
 
@@ -76,7 +75,7 @@ haplink = Haplink(port: str, baudrate: int = 115200, timeout: float = 0.001,
 ```python
 haplink.connect() -> bool
 ```
-Open serial connection and verify device is responding.
+Opens serial connection.
 
 **Returns**: `True` if successful, `False` if device not detected
 

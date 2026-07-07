@@ -75,7 +75,7 @@ class Haplink:
         port: str,
         baudrate: int = 115200,
         timeout: float = 0.001,
-        connection_timeout: float = 2.0
+        #connection_timeout: float = 2.0
     ):
         """
         Initialize Haplink client.
@@ -87,7 +87,7 @@ class Haplink:
             connection_timeout: Max time to wait for device response
         """
         self._serial = SerialPort(port, baudrate, timeout)
-        self._connection_timeout = connection_timeout
+        #self._connection_timeout = connection_timeout
 
         # Registries
         self._params: Dict[int, ParamBinding] = {}
@@ -111,23 +111,24 @@ class Haplink:
         """
         try:
             self._serial.open()
+            return True
         except HaplinkError as e:
             raise ConnectionError(f"Failed to connect: {e}")
 
         # Try to detect device by reading packets
-        start_time = time.time()
-        while time.time() - start_time < self._connection_timeout:
-            try:
-                packet = self._serial.read_packet()
-                if packet is not None:
-                    self._connected = True
-                    self._last_packet_time = time.time()
-                    return True
-            except ProtocolError:
-                continue
+        #start_time = time.time()
+        #while time.time() - start_time < self._connection_timeout:
+            # try:
+            #     packet = self._serial.read_packet()
+            #     if packet is not None:
+            #         self._connected = True
+            #         self._last_packet_time = time.time()
+            #         return True
+            # except ProtocolError:
+            #     continue
 
         # No response from device
-        self._serial.close()
+        #self._serial.close()
         return False
 
     def disconnect(self) -> None:
