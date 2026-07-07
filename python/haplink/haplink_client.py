@@ -111,6 +111,7 @@ class Haplink:
         """
         try:
             self._serial.open()
+            self._connected = True
             return True
         except HaplinkError as e:
             raise ConnectionError(f"Failed to connect: {e}")
