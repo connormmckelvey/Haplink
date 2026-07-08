@@ -1,18 +1,3 @@
-<style>
-  body {
-    background-color: #0d1117 !important; /* GitHub's dark mode background */
-    color: #c9d1d9 !important;            /* GitHub's dark mode text */
-  }
-  a {
-    color: #58a6ff !important;            /* GitHub's dark mode link color */
-  }
-  pre, code {
-    background-color: #161b22 !important; /* Dark mode code blocks */
-    color: #e6edf3 !important;
-  }
-</style>
-
-
 ![Haplink Logo](docs/logo_with_text_dm.png)
 
 # Haplink™ Communication Protocol
