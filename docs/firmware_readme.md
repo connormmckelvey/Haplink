@@ -9,7 +9,7 @@ C++ library for Arduino and embedded systems to enable serial communication with
 ### Method 1: Arduino Library Manager (Recommended)
 
 1. Open the Arduino IDE.
-2. Go to **Sketch** -> **Include Library** -> **Manage Libraries...** (or press `Ctrl+Shift+I` / `Cmd+Shift+I`).
+2. Go to **Sketch** > **Include Library** > **Manage Libraries...** (or press `Ctrl+Shift+I` / `Cmd+Shift+I`).
 3. Search for **Haplink**.
 4. Click **Install**.
 
