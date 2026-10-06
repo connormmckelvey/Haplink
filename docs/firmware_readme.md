@@ -510,7 +510,7 @@ void loop() {
 
 When you register a variable, Haplink stores a **pointer** to it. This means:
 
-1. **Direct Memory Access**: Changes are immediate (no copying)
+1. **Direct Memory Access**: No Copying
 2. **Thread Safety**: Be careful with interrupts
 3. **Scope**: Variables must remain in scope (use global variables or class members)
 
